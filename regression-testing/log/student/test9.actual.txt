@@ -1,0 +1,2940 @@
+  state:not started, normal, ok
+  Welcome to Space Defender Version 2.
+->play(9,28,1,7,8,13,17)
+  state:weapon setup, normal, ok
+  1:Standard (A single projectile is fired in front)
+    Health:10, Energy:10, Regen:0/1, Armour:0, Vision:1, Move:1, Move Cost:1,
+    Projectile Damage:70, Projectile Cost:5 (energy)
+  2:Spread (Three projectiles are fired in front, two going diagonal)
+    Health:0, Energy:60, Regen:0/2, Armour:1, Vision:0, Move:0, Move Cost:2,
+    Projectile Damage:50, Projectile Cost:10 (energy)
+  3:Snipe (Fast and high damage projectile, but only travels via teleporting)
+    Health:0, Energy:100, Regen:0/5, Armour:0, Vision:10, Move:3, Move Cost:0,
+    Projectile Damage:1000, Projectile Cost:20 (energy)
+  4:Rocket (Two projectiles appear behind to the sides of the Starfighter and accelerates)
+    Health:10, Energy:0, Regen:10/0, Armour:2, Vision:2, Move:0, Move Cost:3,
+    Projectile Damage:100, Projectile Cost:10 (health)
+  5:Splitter (A single mine projectile is placed in front of the Starfighter)
+    Health:0, Energy:100, Regen:0/10, Armour:0, Vision:0, Move:0, Move Cost:5,
+    Projectile Damage:150, Projectile Cost:70 (energy)
+  Weapon Selected:Standard
+->toggle_debug_mode
+  state:weapon setup, debug, ok
+  In debug mode.
+->setup_select(2)
+  state:weapon setup, debug, ok
+  1:Standard (A single projectile is fired in front)
+    Health:10, Energy:10, Regen:0/1, Armour:0, Vision:1, Move:1, Move Cost:1,
+    Projectile Damage:70, Projectile Cost:5 (energy)
+  2:Spread (Three projectiles are fired in front, two going diagonal)
+    Health:0, Energy:60, Regen:0/2, Armour:1, Vision:0, Move:0, Move Cost:2,
+    Projectile Damage:50, Projectile Cost:10 (energy)
+  3:Snipe (Fast and high damage projectile, but only travels via teleporting)
+    Health:0, Energy:100, Regen:0/5, Armour:0, Vision:10, Move:3, Move Cost:0,
+    Projectile Damage:1000, Projectile Cost:20 (energy)
+  4:Rocket (Two projectiles appear behind to the sides of the Starfighter and accelerates)
+    Health:10, Energy:0, Regen:10/0, Armour:2, Vision:2, Move:0, Move Cost:3,
+    Projectile Damage:100, Projectile Cost:10 (health)
+  5:Splitter (A single mine projectile is placed in front of the Starfighter)
+    Health:0, Energy:100, Regen:0/10, Armour:0, Vision:0, Move:0, Move Cost:5,
+    Projectile Damage:150, Projectile Cost:70 (energy)
+  Weapon Selected:Spread
+->setup_next(1)
+  state:armour setup, debug, ok
+  1:None
+    Health:50, Energy:0, Regen:1/0, Armour:0, Vision:0, Move:1, Move Cost:0
+  2:Light
+    Health:75, Energy:0, Regen:2/0, Armour:3, Vision:0, Move:0, Move Cost:1
+  3:Medium
+    Health:100, Energy:0, Regen:3/0, Armour:5, Vision:0, Move:0, Move Cost:3
+  4:Heavy
+    Health:200, Energy:0, Regen:4/0, Armour:10, Vision:0, Move:-1, Move Cost:5
+  Armour Selected:None
+->setup_select(3)
+  state:armour setup, debug, ok
+  1:None
+    Health:50, Energy:0, Regen:1/0, Armour:0, Vision:0, Move:1, Move Cost:0
+  2:Light
+    Health:75, Energy:0, Regen:2/0, Armour:3, Vision:0, Move:0, Move Cost:1
+  3:Medium
+    Health:100, Energy:0, Regen:3/0, Armour:5, Vision:0, Move:0, Move Cost:3
+  4:Heavy
+    Health:200, Energy:0, Regen:4/0, Armour:10, Vision:0, Move:-1, Move Cost:5
+  Armour Selected:Medium
+->setup_next(1)
+  state:engine setup, debug, ok
+  1:Standard
+    Health:10, Energy:60, Regen:0/2, Armour:1, Vision:12, Move:8, Move Cost:2
+  2:Light
+    Health:0, Energy:30, Regen:0/1, Armour:0, Vision:15, Move:10, Move Cost:1
+  3:Armoured
+    Health:50, Energy:100, Regen:0/3, Armour:3, Vision:6, Move:4, Move Cost:5
+  Engine Selected:Standard
+->setup_select(1)
+  state:engine setup, debug, ok
+  1:Standard
+    Health:10, Energy:60, Regen:0/2, Armour:1, Vision:12, Move:8, Move Cost:2
+  2:Light
+    Health:0, Energy:30, Regen:0/1, Armour:0, Vision:15, Move:10, Move Cost:1
+  3:Armoured
+    Health:50, Energy:100, Regen:0/3, Armour:3, Vision:6, Move:4, Move Cost:5
+  Engine Selected:Standard
+->setup_next(1)
+  state:power setup, debug, ok
+  1:Recall (50 energy): Teleport back to spawn.
+  2:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+  3:Overcharge (up to 50 health): Gain 2*health spent energy, can go over max energy. Energy regen will not be in effect if over cap.
+  4:Deploy Drones (100 energy): Clear all projectiles.
+  5:Orbital Strike (100 energy): Deal 100 damage to all enemies, affected by armour.
+  Power Selected:Recall (50 energy): Teleport back to spawn.
+->setup_select(1)
+  state:power setup, debug, ok
+  1:Recall (50 energy): Teleport back to spawn.
+  2:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+  3:Overcharge (up to 50 health): Gain 2*health spent energy, can go over max energy. Energy regen will not be in effect if over cap.
+  4:Deploy Drones (100 energy): Clear all projectiles.
+  5:Orbital Strike (100 energy): Deal 100 damage to all enemies, affected by armour.
+  Power Selected:Recall (50 energy): Teleport back to spawn.
+->setup_next(1)
+  state:setup summary, debug, ok
+  Weapon Selected:Spread
+  Armour Selected:Medium
+  Engine Selected:Standard
+  Power Selected:Recall (50 energy): Teleport back to spawn.
+->setup_select(2)
+  state:setup summary, debug, error
+  Command can only be used in setup mode (excluding summary in setup).
+->setup_next(1)
+  state:in game(0.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+  Friendly Projectile Action:
+  Enemy Projectile Action:
+  Starfighter Action:
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(1.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:110/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [1,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,28]
+  Projectile:
+    [-1,*]->damage:50, move:1, location:[D,2]
+    [-2,*]->damage:50, move:1, location:[E,2]
+    [-3,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-1) spawns at location [D,2].
+      A friendly projectile(id:-2) spawns at location [E,2].
+      A friendly projectile(id:-3) spawns at location [F,2].
+  Enemy Action:
+  Natural Enemy Spawn:
+    A Fighter(id:1) spawns at location [A,28].
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  F
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(2.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:118/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [1,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,22]
+  Projectile:
+    [-1,*]->damage:50, move:1, location:[C,3]
+    [-2,*]->damage:50, move:1, location:[E,3]
+    [-3,*]->damage:50, move:1, location:[G,3]
+    [-4,<]->damage:100, move:10, location:[A,21]
+  Friendly Projectile Action:
+    A friendly projectile(id:-1) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-2) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-3) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:1) moves: [A,28] -> [A,22]
+      A enemy projectile(id:-4) spawns at location [A,21].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  <  F  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(3.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [1,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,16]
+  Projectile:
+    [-1,*]->damage:50, move:1, location:[B,4]
+    [-2,*]->damage:50, move:1, location:[E,4]
+    [-3,*]->damage:50, move:1, location:[H,4]
+    [-4,<]->damage:100, move:10, location:[A,11]
+    [-5,<]->damage:100, move:10, location:[A,15]
+  Friendly Projectile Action:
+    A friendly projectile(id:-1) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-2) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-3) moves: [G,3] -> [H,4]
+  Enemy Projectile Action:
+    A enemy projectile(id:-4) moves: [A,21] -> [A,11]
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:1) moves: [A,22] -> [A,16]
+      A enemy projectile(id:-5) spawns at location [A,15].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  <  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(4.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [1,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,10]
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,5]
+    [-3,*]->damage:50, move:1, location:[I,5]
+    [-4,<]->damage:50, move:10, location:[A,1]
+    [-5,<]->damage:100, move:10, location:[A,5]
+    [-6,<]->damage:100, move:10, location:[A,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-1) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-2) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-3) moves: [H,4] -> [I,5]
+  Enemy Projectile Action:
+    A enemy projectile(id:-4) moves: [A,11] -> [A,1]
+      The projectile collides with friendly projectile(id:-1) at location [A,5], negating damage.
+    A enemy projectile(id:-5) moves: [A,15] -> [A,5]
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:1) moves: [A,16] -> [A,10]
+      A enemy projectile(id:-6) spawns at location [A,9].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A <  _  _  _  <  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(5.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [1,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:T, can_see_Starfighter:T, location:[A,4]
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,6]
+    [-7,<]->damage:100, move:10, location:[A,3]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-3) moves: [I,5] -> out of board
+  Enemy Projectile Action:
+    A enemy projectile(id:-4) moves: [A,1] -> out of board
+    A enemy projectile(id:-5) moves: [A,5] -> out of board
+    A enemy projectile(id:-6) moves: [A,9] -> out of board
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:1) moves: [A,10] -> [A,4]
+      A enemy projectile(id:-7) spawns at location [A,3].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(6.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,7]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,6] -> [E,7]
+  Enemy Projectile Action:
+    A enemy projectile(id:-7) moves: [A,3] -> out of board
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:1) moves: [A,4] -> out of board
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(7.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,8]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,7] -> [E,8]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->move(A,13)
+  state:in game(7.1), debug, error
+  Out of movement range.
+->pass
+  state:in game(8.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,8] -> [E,9]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(9.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,10]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,9] -> [E,10]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(10.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:110/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,11]
+    [-8,*]->damage:50, move:1, location:[D,2]
+    [-9,*]->damage:50, move:1, location:[E,2]
+    [-10,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,10] -> [E,11]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-8) spawns at location [D,2].
+      A friendly projectile(id:-9) spawns at location [E,2].
+      A friendly projectile(id:-10) spawns at location [F,2].
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(11.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:118/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,12]
+    [-8,*]->damage:50, move:1, location:[C,3]
+    [-9,*]->damage:50, move:1, location:[E,3]
+    [-10,*]->damage:50, move:1, location:[G,3]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,11] -> [E,12]
+    A friendly projectile(id:-8) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-9) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-10) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->special
+  state:in game(12.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:70/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,13]
+    [-8,*]->damage:50, move:1, location:[B,4]
+    [-9,*]->damage:50, move:1, location:[E,4]
+    [-10,*]->damage:50, move:1, location:[H,4]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,12] -> [E,13]
+    A friendly projectile(id:-8) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-9) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-10) moves: [G,3] -> [H,4]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) uses special, teleporting to: [E,1]
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->move(I,6)
+  state:in game(12.1), debug, error
+  Out of movement range.
+->pass
+  state:in game(13.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:78/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,14]
+    [-8,*]->damage:50, move:1, location:[A,5]
+    [-9,*]->damage:50, move:1, location:[E,5]
+    [-10,*]->damage:50, move:1, location:[I,5]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,13] -> [E,14]
+    A friendly projectile(id:-8) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-9) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-10) moves: [H,4] -> [I,5]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(14.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:86/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,15]
+    [-9,*]->damage:50, move:1, location:[E,6]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,14] -> [E,15]
+    A friendly projectile(id:-8) moves: [A,5] -> out of board
+    A friendly projectile(id:-9) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-10) moves: [I,5] -> out of board
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(15.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:80/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,16]
+    [-9,*]->damage:50, move:1, location:[E,7]
+    [-11,*]->damage:50, move:1, location:[D,2]
+    [-12,*]->damage:50, move:1, location:[E,2]
+    [-13,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,15] -> [E,16]
+    A friendly projectile(id:-9) moves: [E,6] -> [E,7]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-11) spawns at location [D,2].
+      A friendly projectile(id:-12) spawns at location [E,2].
+      A friendly projectile(id:-13) spawns at location [F,2].
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(16.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:74/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [2,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,28]
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,17]
+    [-9,*]->damage:50, move:1, location:[E,8]
+    [-11,*]->damage:50, move:1, location:[C,3]
+    [-12,*]->damage:50, move:1, location:[E,3]
+    [-13,*]->damage:50, move:1, location:[G,3]
+    [-14,*]->damage:50, move:1, location:[D,2]
+    [-15,*]->damage:50, move:1, location:[E,2]
+    [-16,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,16] -> [E,17]
+    A friendly projectile(id:-9) moves: [E,7] -> [E,8]
+    A friendly projectile(id:-11) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-12) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-13) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-14) spawns at location [D,2].
+      A friendly projectile(id:-15) spawns at location [E,2].
+      A friendly projectile(id:-16) spawns at location [F,2].
+  Enemy Action:
+  Natural Enemy Spawn:
+    A Fighter(id:2) spawns at location [A,28].
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  F
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(17.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:82/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [2,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,22]
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,18]
+    [-9,*]->damage:50, move:1, location:[E,9]
+    [-11,*]->damage:50, move:1, location:[B,4]
+    [-12,*]->damage:50, move:1, location:[E,4]
+    [-13,*]->damage:50, move:1, location:[H,4]
+    [-14,*]->damage:50, move:1, location:[C,3]
+    [-15,*]->damage:50, move:1, location:[E,3]
+    [-16,*]->damage:50, move:1, location:[G,3]
+    [-17,<]->damage:100, move:10, location:[A,21]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,17] -> [E,18]
+    A friendly projectile(id:-9) moves: [E,8] -> [E,9]
+    A friendly projectile(id:-11) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-12) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-13) moves: [G,3] -> [H,4]
+    A friendly projectile(id:-14) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-15) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-16) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:2) moves: [A,28] -> [A,22]
+      A enemy projectile(id:-17) spawns at location [A,21].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  <  F  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(18.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:90/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [2,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,16]
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,19]
+    [-9,*]->damage:50, move:1, location:[E,10]
+    [-11,*]->damage:50, move:1, location:[A,5]
+    [-12,*]->damage:50, move:1, location:[E,5]
+    [-13,*]->damage:50, move:1, location:[I,5]
+    [-14,*]->damage:50, move:1, location:[B,4]
+    [-15,*]->damage:50, move:1, location:[E,4]
+    [-16,*]->damage:50, move:1, location:[H,4]
+    [-17,<]->damage:100, move:10, location:[A,11]
+    [-18,<]->damage:100, move:10, location:[A,15]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,18] -> [E,19]
+    A friendly projectile(id:-9) moves: [E,9] -> [E,10]
+    A friendly projectile(id:-11) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-12) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-13) moves: [H,4] -> [I,5]
+    A friendly projectile(id:-14) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-15) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-16) moves: [G,3] -> [H,4]
+  Enemy Projectile Action:
+    A enemy projectile(id:-17) moves: [A,21] -> [A,11]
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:2) moves: [A,22] -> [A,16]
+      A enemy projectile(id:-18) spawns at location [A,15].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  *  _  _  _  _  _  <  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(19.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:98/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [2,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,10]
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,20]
+    [-9,*]->damage:50, move:1, location:[E,11]
+    [-12,*]->damage:50, move:1, location:[E,6]
+    [-15,*]->damage:50, move:1, location:[E,5]
+    [-16,*]->damage:50, move:1, location:[I,5]
+    [-17,<]->damage:50, move:10, location:[A,1]
+    [-18,<]->damage:100, move:10, location:[A,5]
+    [-19,<]->damage:100, move:10, location:[A,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,19] -> [E,20]
+    A friendly projectile(id:-9) moves: [E,10] -> [E,11]
+    A friendly projectile(id:-11) moves: [A,5] -> out of board
+    A friendly projectile(id:-12) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-13) moves: [I,5] -> out of board
+    A friendly projectile(id:-14) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-15) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-16) moves: [H,4] -> [I,5]
+  Enemy Projectile Action:
+    A enemy projectile(id:-17) moves: [A,11] -> [A,1]
+      The projectile collides with friendly projectile(id:-14) at location [A,5], negating damage.
+    A enemy projectile(id:-18) moves: [A,15] -> [A,5]
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:2) moves: [A,16] -> [A,10]
+      A enemy projectile(id:-19) spawns at location [A,9].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A <  _  _  _  <  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(20.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:106/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [2,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:T, can_see_Starfighter:T, location:[A,4]
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,21]
+    [-9,*]->damage:50, move:1, location:[E,12]
+    [-12,*]->damage:50, move:1, location:[E,7]
+    [-15,*]->damage:50, move:1, location:[E,6]
+    [-20,<]->damage:100, move:10, location:[A,3]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,20] -> [E,21]
+    A friendly projectile(id:-9) moves: [E,11] -> [E,12]
+    A friendly projectile(id:-12) moves: [E,6] -> [E,7]
+    A friendly projectile(id:-15) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-16) moves: [I,5] -> out of board
+  Enemy Projectile Action:
+    A enemy projectile(id:-17) moves: [A,1] -> out of board
+    A enemy projectile(id:-18) moves: [A,5] -> out of board
+    A enemy projectile(id:-19) moves: [A,9] -> out of board
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:2) moves: [A,10] -> [A,4]
+      A enemy projectile(id:-20) spawns at location [A,3].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(21.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:114/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,22]
+    [-9,*]->damage:50, move:1, location:[E,13]
+    [-12,*]->damage:50, move:1, location:[E,8]
+    [-15,*]->damage:50, move:1, location:[E,7]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,21] -> [E,22]
+    A friendly projectile(id:-9) moves: [E,12] -> [E,13]
+    A friendly projectile(id:-12) moves: [E,7] -> [E,8]
+    A friendly projectile(id:-15) moves: [E,6] -> [E,7]
+  Enemy Projectile Action:
+    A enemy projectile(id:-20) moves: [A,3] -> out of board
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:2) moves: [A,4] -> out of board
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(22.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,23]
+    [-9,*]->damage:50, move:1, location:[E,14]
+    [-12,*]->damage:50, move:1, location:[E,9]
+    [-15,*]->damage:50, move:1, location:[E,8]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,22] -> [E,23]
+    A friendly projectile(id:-9) moves: [E,13] -> [E,14]
+    A friendly projectile(id:-12) moves: [E,8] -> [E,9]
+    A friendly projectile(id:-15) moves: [E,7] -> [E,8]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(23.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,24]
+    [-9,*]->damage:50, move:1, location:[E,15]
+    [-12,*]->damage:50, move:1, location:[E,10]
+    [-15,*]->damage:50, move:1, location:[E,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,23] -> [E,24]
+    A friendly projectile(id:-9) moves: [E,14] -> [E,15]
+    A friendly projectile(id:-12) moves: [E,9] -> [E,10]
+    A friendly projectile(id:-15) moves: [E,8] -> [E,9]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(24.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,25]
+    [-9,*]->damage:50, move:1, location:[E,16]
+    [-12,*]->damage:50, move:1, location:[E,11]
+    [-15,*]->damage:50, move:1, location:[E,10]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,24] -> [E,25]
+    A friendly projectile(id:-9) moves: [E,15] -> [E,16]
+    A friendly projectile(id:-12) moves: [E,10] -> [E,11]
+    A friendly projectile(id:-15) moves: [E,9] -> [E,10]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(25.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,26]
+    [-9,*]->damage:50, move:1, location:[E,17]
+    [-12,*]->damage:50, move:1, location:[E,12]
+    [-15,*]->damage:50, move:1, location:[E,11]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,25] -> [E,26]
+    A friendly projectile(id:-9) moves: [E,16] -> [E,17]
+    A friendly projectile(id:-12) moves: [E,11] -> [E,12]
+    A friendly projectile(id:-15) moves: [E,10] -> [E,11]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(26.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,27]
+    [-9,*]->damage:50, move:1, location:[E,18]
+    [-12,*]->damage:50, move:1, location:[E,13]
+    [-15,*]->damage:50, move:1, location:[E,12]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,26] -> [E,27]
+    A friendly projectile(id:-9) moves: [E,17] -> [E,18]
+    A friendly projectile(id:-12) moves: [E,12] -> [E,13]
+    A friendly projectile(id:-15) moves: [E,11] -> [E,12]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(27.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-2,*]->damage:50, move:1, location:[E,28]
+    [-9,*]->damage:50, move:1, location:[E,19]
+    [-12,*]->damage:50, move:1, location:[E,14]
+    [-15,*]->damage:50, move:1, location:[E,13]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,27] -> [E,28]
+    A friendly projectile(id:-9) moves: [E,18] -> [E,19]
+    A friendly projectile(id:-12) moves: [E,13] -> [E,14]
+    A friendly projectile(id:-15) moves: [E,12] -> [E,13]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _  *
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(28.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-9,*]->damage:50, move:1, location:[E,20]
+    [-12,*]->damage:50, move:1, location:[E,15]
+    [-15,*]->damage:50, move:1, location:[E,14]
+  Friendly Projectile Action:
+    A friendly projectile(id:-2) moves: [E,28] -> out of board
+    A friendly projectile(id:-9) moves: [E,19] -> [E,20]
+    A friendly projectile(id:-12) moves: [E,14] -> [E,15]
+    A friendly projectile(id:-15) moves: [E,13] -> [E,14]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(29.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-9,*]->damage:50, move:1, location:[E,21]
+    [-12,*]->damage:50, move:1, location:[E,16]
+    [-15,*]->damage:50, move:1, location:[E,15]
+  Friendly Projectile Action:
+    A friendly projectile(id:-9) moves: [E,20] -> [E,21]
+    A friendly projectile(id:-12) moves: [E,15] -> [E,16]
+    A friendly projectile(id:-15) moves: [E,14] -> [E,15]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(30.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-9,*]->damage:50, move:1, location:[E,22]
+    [-12,*]->damage:50, move:1, location:[E,17]
+    [-15,*]->damage:50, move:1, location:[E,16]
+  Friendly Projectile Action:
+    A friendly projectile(id:-9) moves: [E,21] -> [E,22]
+    A friendly projectile(id:-12) moves: [E,16] -> [E,17]
+    A friendly projectile(id:-15) moves: [E,15] -> [E,16]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(31.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+  Projectile:
+    [-9,*]->damage:50, move:1, location:[E,23]
+    [-12,*]->damage:50, move:1, location:[E,18]
+    [-15,*]->damage:50, move:1, location:[E,17]
+  Friendly Projectile Action:
+    A friendly projectile(id:-9) moves: [E,22] -> [E,23]
+    A friendly projectile(id:-12) moves: [E,17] -> [E,18]
+    A friendly projectile(id:-15) moves: [E,16] -> [E,17]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(32.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:110/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:0
+  Enemy:
+    [3,I]->health:50/50, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[E,28]
+  Projectile:
+    [-9,*]->damage:50, move:1, location:[E,24]
+    [-12,*]->damage:50, move:1, location:[E,19]
+    [-15,*]->damage:50, move:1, location:[E,18]
+    [-21,*]->damage:50, move:1, location:[D,2]
+    [-22,*]->damage:50, move:1, location:[E,2]
+    [-23,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-9) moves: [E,23] -> [E,24]
+    A friendly projectile(id:-12) moves: [E,18] -> [E,19]
+    A friendly projectile(id:-15) moves: [E,17] -> [E,18]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-21) spawns at location [D,2].
+      A friendly projectile(id:-22) spawns at location [E,2].
+      A friendly projectile(id:-23) spawns at location [F,2].
+  Enemy Action:
+  Natural Enemy Spawn:
+    A Interceptor(id:3) spawns at location [E,28].
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  *  _  _  _  I
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(33.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:118/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,20]
+    [-15,*]->damage:50, move:1, location:[E,19]
+    [-21,*]->damage:50, move:1, location:[C,3]
+    [-22,*]->damage:50, move:1, location:[E,3]
+    [-23,*]->damage:50, move:1, location:[G,3]
+  Friendly Projectile Action:
+    A friendly projectile(id:-9) moves: [E,24] -> [E,25]
+    A friendly projectile(id:-12) moves: [E,19] -> [E,20]
+    A friendly projectile(id:-15) moves: [E,18] -> [E,19]
+    A friendly projectile(id:-21) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-22) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-23) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Interceptor(id:3) moves: [E,28] -> [E,25]
+      The Interceptor collides with friendly projectile(id:-9) at location [E,25], taking 50 damage.
+      The Interceptor at location [E,25] has been destroyed.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(34.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,21]
+    [-15,*]->damage:50, move:1, location:[E,20]
+    [-21,*]->damage:50, move:1, location:[B,4]
+    [-22,*]->damage:50, move:1, location:[E,4]
+    [-23,*]->damage:50, move:1, location:[H,4]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,20] -> [E,21]
+    A friendly projectile(id:-15) moves: [E,19] -> [E,20]
+    A friendly projectile(id:-21) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-22) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-23) moves: [G,3] -> [H,4]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(35.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,22]
+    [-15,*]->damage:50, move:1, location:[E,21]
+    [-21,*]->damage:50, move:1, location:[A,5]
+    [-22,*]->damage:50, move:1, location:[E,5]
+    [-23,*]->damage:50, move:1, location:[I,5]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,21] -> [E,22]
+    A friendly projectile(id:-15) moves: [E,20] -> [E,21]
+    A friendly projectile(id:-21) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-22) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-23) moves: [H,4] -> [I,5]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(36.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,23]
+    [-15,*]->damage:50, move:1, location:[E,22]
+    [-22,*]->damage:50, move:1, location:[E,6]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,22] -> [E,23]
+    A friendly projectile(id:-15) moves: [E,21] -> [E,22]
+    A friendly projectile(id:-21) moves: [A,5] -> out of board
+    A friendly projectile(id:-22) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-23) moves: [I,5] -> out of board
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(37.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,24]
+    [-15,*]->damage:50, move:1, location:[E,23]
+    [-22,*]->damage:50, move:1, location:[E,7]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,23] -> [E,24]
+    A friendly projectile(id:-15) moves: [E,22] -> [E,23]
+    A friendly projectile(id:-22) moves: [E,6] -> [E,7]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(38.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,25]
+    [-15,*]->damage:50, move:1, location:[E,24]
+    [-22,*]->damage:50, move:1, location:[E,8]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,24] -> [E,25]
+    A friendly projectile(id:-15) moves: [E,23] -> [E,24]
+    A friendly projectile(id:-22) moves: [E,7] -> [E,8]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->special
+  state:in game(39.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:70/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,26]
+    [-15,*]->damage:50, move:1, location:[E,25]
+    [-22,*]->damage:50, move:1, location:[E,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,25] -> [E,26]
+    A friendly projectile(id:-15) moves: [E,24] -> [E,25]
+    A friendly projectile(id:-22) moves: [E,8] -> [E,9]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) uses special, teleporting to: [E,1]
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(40.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:64/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,27]
+    [-15,*]->damage:50, move:1, location:[E,26]
+    [-22,*]->damage:50, move:1, location:[E,10]
+    [-24,*]->damage:50, move:1, location:[D,2]
+    [-25,*]->damage:50, move:1, location:[E,2]
+    [-26,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,26] -> [E,27]
+    A friendly projectile(id:-15) moves: [E,25] -> [E,26]
+    A friendly projectile(id:-22) moves: [E,9] -> [E,10]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-24) spawns at location [D,2].
+      A friendly projectile(id:-25) spawns at location [E,2].
+      A friendly projectile(id:-26) spawns at location [F,2].
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *  _
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(41.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:72/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:1
+  Enemy:
+  Projectile:
+    [-12,*]->damage:50, move:1, location:[E,28]
+    [-15,*]->damage:50, move:1, location:[E,27]
+    [-22,*]->damage:50, move:1, location:[E,11]
+    [-24,*]->damage:50, move:1, location:[C,3]
+    [-25,*]->damage:50, move:1, location:[E,3]
+    [-26,*]->damage:50, move:1, location:[G,3]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,27] -> [E,28]
+    A friendly projectile(id:-15) moves: [E,26] -> [E,27]
+    A friendly projectile(id:-22) moves: [E,10] -> [E,11]
+    A friendly projectile(id:-24) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-25) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-26) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  *  *
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(42.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:66/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,12]
+    [-24,*]->damage:50, move:1, location:[B,4]
+    [-25,*]->damage:50, move:1, location:[E,4]
+    [-26,*]->damage:50, move:1, location:[H,4]
+    [-27,*]->damage:50, move:1, location:[D,2]
+    [-28,*]->damage:50, move:1, location:[E,2]
+    [-29,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-12) moves: [E,28] -> out of board
+    A friendly projectile(id:-15) moves: [E,27] -> [E,28]
+    A friendly projectile(id:-22) moves: [E,11] -> [E,12]
+    A friendly projectile(id:-24) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-25) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-26) moves: [G,3] -> [H,4]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-27) spawns at location [D,2].
+      A friendly projectile(id:-28) spawns at location [E,2].
+      A friendly projectile(id:-29) spawns at location [F,2].
+  Enemy Action:
+  Natural Enemy Spawn:
+    A Interceptor(id:4) spawns at location [E,28].
+      The Interceptor collides with friendly projectile(id:-15) at location [E,28], taking 50 damage.
+      The Interceptor at location [E,28] has been destroyed.
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(43.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:74/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,13]
+    [-24,*]->damage:50, move:1, location:[A,5]
+    [-25,*]->damage:50, move:1, location:[E,5]
+    [-26,*]->damage:50, move:1, location:[I,5]
+    [-27,*]->damage:50, move:1, location:[C,3]
+    [-28,*]->damage:50, move:1, location:[E,3]
+    [-29,*]->damage:50, move:1, location:[G,3]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,12] -> [E,13]
+    A friendly projectile(id:-24) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-25) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-26) moves: [H,4] -> [I,5]
+    A friendly projectile(id:-27) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-28) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-29) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(44.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:82/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,14]
+    [-25,*]->damage:50, move:1, location:[E,6]
+    [-27,*]->damage:50, move:1, location:[B,4]
+    [-28,*]->damage:50, move:1, location:[E,4]
+    [-29,*]->damage:50, move:1, location:[H,4]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,13] -> [E,14]
+    A friendly projectile(id:-24) moves: [A,5] -> out of board
+    A friendly projectile(id:-25) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-26) moves: [I,5] -> out of board
+    A friendly projectile(id:-27) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-28) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-29) moves: [G,3] -> [H,4]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(45.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:90/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,15]
+    [-25,*]->damage:50, move:1, location:[E,7]
+    [-27,*]->damage:50, move:1, location:[A,5]
+    [-28,*]->damage:50, move:1, location:[E,5]
+    [-29,*]->damage:50, move:1, location:[I,5]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,14] -> [E,15]
+    A friendly projectile(id:-25) moves: [E,6] -> [E,7]
+    A friendly projectile(id:-27) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-28) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-29) moves: [H,4] -> [I,5]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(46.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:98/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,16]
+    [-25,*]->damage:50, move:1, location:[E,8]
+    [-28,*]->damage:50, move:1, location:[E,6]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,15] -> [E,16]
+    A friendly projectile(id:-25) moves: [E,7] -> [E,8]
+    A friendly projectile(id:-27) moves: [A,5] -> out of board
+    A friendly projectile(id:-28) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-29) moves: [I,5] -> out of board
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(47.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:106/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,17]
+    [-25,*]->damage:50, move:1, location:[E,9]
+    [-28,*]->damage:50, move:1, location:[E,7]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,16] -> [E,17]
+    A friendly projectile(id:-25) moves: [E,8] -> [E,9]
+    A friendly projectile(id:-28) moves: [E,6] -> [E,7]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(48.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:114/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,18]
+    [-25,*]->damage:50, move:1, location:[E,10]
+    [-28,*]->damage:50, move:1, location:[E,8]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,17] -> [E,18]
+    A friendly projectile(id:-25) moves: [E,9] -> [E,10]
+    A friendly projectile(id:-28) moves: [E,7] -> [E,8]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(49.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,19]
+    [-25,*]->damage:50, move:1, location:[E,11]
+    [-28,*]->damage:50, move:1, location:[E,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,18] -> [E,19]
+    A friendly projectile(id:-25) moves: [E,10] -> [E,11]
+    A friendly projectile(id:-28) moves: [E,8] -> [E,9]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(50.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,20]
+    [-25,*]->damage:50, move:1, location:[E,12]
+    [-28,*]->damage:50, move:1, location:[E,10]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,19] -> [E,20]
+    A friendly projectile(id:-25) moves: [E,11] -> [E,12]
+    A friendly projectile(id:-28) moves: [E,9] -> [E,10]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->special
+  state:in game(51.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:70/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,28]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,21]
+    [-25,*]->damage:50, move:1, location:[E,13]
+    [-28,*]->damage:50, move:1, location:[E,11]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,20] -> [E,21]
+    A friendly projectile(id:-25) moves: [E,12] -> [E,13]
+    A friendly projectile(id:-28) moves: [E,10] -> [E,11]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) uses special, teleporting to: [E,1]
+  Enemy Action:
+  Natural Enemy Spawn:
+    A Pylon(id:5) spawns at location [D,28].
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P
+    E S  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(52.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:78/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,26]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,22]
+    [-25,*]->damage:50, move:1, location:[E,14]
+    [-28,*]->damage:50, move:1, location:[E,12]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,21] -> [E,22]
+    A friendly projectile(id:-25) moves: [E,13] -> [E,14]
+    A friendly projectile(id:-28) moves: [E,11] -> [E,12]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,28] -> [D,26]
+      The Pylon heals Pylon(id:5) at location [D,26] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(53.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:86/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,24]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,23]
+    [-25,*]->damage:50, move:1, location:[E,15]
+    [-28,*]->damage:50, move:1, location:[E,13]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,22] -> [E,23]
+    A friendly projectile(id:-25) moves: [E,14] -> [E,15]
+    A friendly projectile(id:-28) moves: [E,12] -> [E,13]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,26] -> [D,24]
+      The Pylon heals Pylon(id:5) at location [D,24] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(54.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:94/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,22]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,24]
+    [-25,*]->damage:50, move:1, location:[E,16]
+    [-28,*]->damage:50, move:1, location:[E,14]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,23] -> [E,24]
+    A friendly projectile(id:-25) moves: [E,15] -> [E,16]
+    A friendly projectile(id:-28) moves: [E,13] -> [E,14]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,24] -> [D,22]
+      The Pylon heals Pylon(id:5) at location [D,22] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(55.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:102/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,20]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,25]
+    [-25,*]->damage:50, move:1, location:[E,17]
+    [-28,*]->damage:50, move:1, location:[E,15]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,24] -> [E,25]
+    A friendly projectile(id:-25) moves: [E,16] -> [E,17]
+    A friendly projectile(id:-28) moves: [E,14] -> [E,15]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,22] -> [D,20]
+      The Pylon heals Pylon(id:5) at location [D,20] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->fire
+  state:in game(56.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:96/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,18]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,26]
+    [-25,*]->damage:50, move:1, location:[E,18]
+    [-28,*]->damage:50, move:1, location:[E,16]
+    [-30,*]->damage:50, move:1, location:[D,2]
+    [-31,*]->damage:50, move:1, location:[E,2]
+    [-32,*]->damage:50, move:1, location:[F,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,25] -> [E,26]
+    A friendly projectile(id:-25) moves: [E,17] -> [E,18]
+    A friendly projectile(id:-28) moves: [E,15] -> [E,16]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) fires at location [E,1].
+      A friendly projectile(id:-30) spawns at location [D,2].
+      A friendly projectile(id:-31) spawns at location [E,2].
+      A friendly projectile(id:-32) spawns at location [F,2].
+  Enemy Action:
+    A Pylon(id:5) moves: [D,20] -> [D,18]
+      The Pylon heals Pylon(id:5) at location [D,18] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _
+    E S  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _  _
+    F _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(57.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:104/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,16]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,27]
+    [-25,*]->damage:50, move:1, location:[E,19]
+    [-28,*]->damage:50, move:1, location:[E,17]
+    [-30,*]->damage:50, move:1, location:[C,3]
+    [-31,*]->damage:50, move:1, location:[E,3]
+    [-32,*]->damage:50, move:1, location:[G,3]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,26] -> [E,27]
+    A friendly projectile(id:-25) moves: [E,18] -> [E,19]
+    A friendly projectile(id:-28) moves: [E,16] -> [E,17]
+    A friendly projectile(id:-30) moves: [D,2] -> [C,3]
+    A friendly projectile(id:-31) moves: [E,2] -> [E,3]
+    A friendly projectile(id:-32) moves: [F,2] -> [G,3]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,18] -> [D,16]
+      The Pylon heals Pylon(id:5) at location [D,16] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(58.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:112/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,14]
+  Projectile:
+    [-22,*]->damage:50, move:1, location:[E,28]
+    [-25,*]->damage:50, move:1, location:[E,20]
+    [-28,*]->damage:50, move:1, location:[E,18]
+    [-30,*]->damage:50, move:1, location:[B,4]
+    [-31,*]->damage:50, move:1, location:[E,4]
+    [-32,*]->damage:50, move:1, location:[H,4]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,27] -> [E,28]
+    A friendly projectile(id:-25) moves: [E,19] -> [E,20]
+    A friendly projectile(id:-28) moves: [E,17] -> [E,18]
+    A friendly projectile(id:-30) moves: [C,3] -> [B,4]
+    A friendly projectile(id:-31) moves: [E,3] -> [E,4]
+    A friendly projectile(id:-32) moves: [G,3] -> [H,4]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,16] -> [D,14]
+      The Pylon heals Pylon(id:5) at location [D,14] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _  *
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(59.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:F, location:[D,12]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,21]
+    [-28,*]->damage:50, move:1, location:[E,19]
+    [-30,*]->damage:50, move:1, location:[A,5]
+    [-31,*]->damage:50, move:1, location:[E,5]
+    [-32,*]->damage:50, move:1, location:[I,5]
+  Friendly Projectile Action:
+    A friendly projectile(id:-22) moves: [E,28] -> out of board
+    A friendly projectile(id:-25) moves: [E,20] -> [E,21]
+    A friendly projectile(id:-28) moves: [E,18] -> [E,19]
+    A friendly projectile(id:-30) moves: [B,4] -> [A,5]
+    A friendly projectile(id:-31) moves: [E,4] -> [E,5]
+    A friendly projectile(id:-32) moves: [H,4] -> [I,5]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,14] -> [D,12]
+      The Pylon heals Pylon(id:5) at location [D,12] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(60.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:F, location:[D,10]
+    [6,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[F,28]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,22]
+    [-28,*]->damage:50, move:1, location:[E,20]
+    [-31,*]->damage:50, move:1, location:[E,6]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,21] -> [E,22]
+    A friendly projectile(id:-28) moves: [E,19] -> [E,20]
+    A friendly projectile(id:-30) moves: [A,5] -> out of board
+    A friendly projectile(id:-31) moves: [E,5] -> [E,6]
+    A friendly projectile(id:-32) moves: [I,5] -> out of board
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Pylon(id:5) moves: [D,12] -> [D,10]
+      The Pylon heals Pylon(id:5) at location [D,10] for 10 damage.
+  Natural Enemy Spawn:
+    A Fighter(id:6) spawns at location [F,28].
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  F
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(61.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:F, location:[D,8]
+    [6,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[F,22]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,23]
+    [-28,*]->damage:50, move:1, location:[E,21]
+    [-31,*]->damage:50, move:1, location:[E,7]
+    [-33,<]->damage:100, move:10, location:[F,21]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,22] -> [E,23]
+    A friendly projectile(id:-28) moves: [E,20] -> [E,21]
+    A friendly projectile(id:-31) moves: [E,6] -> [E,7]
+  Enemy Projectile Action:
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:6) moves: [F,28] -> [F,22]
+      A enemy projectile(id:-33) spawns at location [F,21].
+    A Pylon(id:5) moves: [D,10] -> [D,8]
+      The Pylon heals Pylon(id:5) at location [D,8] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  <  F  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(62.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:F, location:[D,6]
+    [6,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[F,16]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,24]
+    [-28,*]->damage:50, move:1, location:[E,22]
+    [-31,*]->damage:50, move:1, location:[E,8]
+    [-33,<]->damage:100, move:10, location:[F,11]
+    [-34,<]->damage:100, move:10, location:[F,15]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,23] -> [E,24]
+    A friendly projectile(id:-28) moves: [E,21] -> [E,22]
+    A friendly projectile(id:-31) moves: [E,7] -> [E,8]
+  Enemy Projectile Action:
+    A enemy projectile(id:-33) moves: [F,21] -> [F,11]
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:6) moves: [F,22] -> [F,16]
+      A enemy projectile(id:-34) spawns at location [F,15].
+    A Pylon(id:5) moves: [D,8] -> [D,6]
+      The Pylon heals Pylon(id:5) at location [D,6] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  <  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(63.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:T, location:[D,4]
+    [6,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:T, can_see_Starfighter:T, location:[F,10]
+    [7,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,28]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,25]
+    [-28,*]->damage:50, move:1, location:[E,23]
+    [-31,*]->damage:50, move:1, location:[E,9]
+    [-33,<]->damage:100, move:10, location:[F,1]
+    [-34,<]->damage:100, move:10, location:[F,5]
+    [-35,<]->damage:100, move:10, location:[F,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,24] -> [E,25]
+    A friendly projectile(id:-28) moves: [E,22] -> [E,23]
+    A friendly projectile(id:-31) moves: [E,8] -> [E,9]
+  Enemy Projectile Action:
+    A enemy projectile(id:-33) moves: [F,11] -> [F,1]
+    A enemy projectile(id:-34) moves: [F,15] -> [F,5]
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:6) moves: [F,16] -> [F,10]
+      A enemy projectile(id:-35) spawns at location [F,9].
+    A Pylon(id:5) moves: [D,6] -> [D,4]
+      The Pylon heals Pylon(id:5) at location [D,4] for 10 damage.
+  Natural Enemy Spawn:
+    A Pylon(id:7) spawns at location [D,28].
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P
+    E S  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _  _
+    F <  _  _  _  <  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(64.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:T, location:[D,3]
+    [6,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:T, can_see_Starfighter:T, location:[F,4]
+    [7,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,26]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,26]
+    [-28,*]->damage:50, move:1, location:[E,24]
+    [-31,*]->damage:50, move:1, location:[E,10]
+    [-36,<]->damage:100, move:10, location:[F,3]
+    [-37,<]->damage:70, move:2, location:[D,2]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,25] -> [E,26]
+    A friendly projectile(id:-28) moves: [E,23] -> [E,24]
+    A friendly projectile(id:-31) moves: [E,9] -> [E,10]
+  Enemy Projectile Action:
+    A enemy projectile(id:-33) moves: [F,1] -> out of board
+    A enemy projectile(id:-34) moves: [F,5] -> out of board
+    A enemy projectile(id:-35) moves: [F,9] -> out of board
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:6) moves: [F,10] -> [F,4]
+      A enemy projectile(id:-36) spawns at location [F,3].
+    A Pylon(id:5) moves: [D,4] -> [D,3]
+      A enemy projectile(id:-37) spawns at location [D,2].
+    A Pylon(id:7) moves: [D,28] -> [D,26]
+      The Pylon heals Pylon(id:7) at location [D,26] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  <  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _
+    E S  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _  _
+    F _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(65.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:T, location:[D,2]
+    [7,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,24]
+    [8,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,28]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,27]
+    [-28,*]->damage:50, move:1, location:[E,25]
+    [-31,*]->damage:50, move:1, location:[E,11]
+    [-38,<]->damage:70, move:2, location:[D,1]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,26] -> [E,27]
+    A friendly projectile(id:-28) moves: [E,24] -> [E,25]
+    A friendly projectile(id:-31) moves: [E,10] -> [E,11]
+  Enemy Projectile Action:
+    A enemy projectile(id:-36) moves: [F,3] -> out of board
+    A enemy projectile(id:-37) moves: [D,2] -> out of board
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:6) moves: [F,4] -> out of board
+    A Pylon(id:5) moves: [D,3] -> [D,2]
+      A enemy projectile(id:-38) spawns at location [D,1].
+    A Pylon(id:7) moves: [D,26] -> [D,24]
+      The Pylon heals Pylon(id:7) at location [D,24] for 10 damage.
+  Natural Enemy Spawn:
+    A Fighter(id:8) spawns at location [A,28].
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  F
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D <  P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(66.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:120/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [5,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:T, can_see_Starfighter:T, location:[D,1]
+    [7,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,22]
+    [8,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,22]
+  Projectile:
+    [-25,*]->damage:50, move:1, location:[E,28]
+    [-28,*]->damage:50, move:1, location:[E,26]
+    [-31,*]->damage:50, move:1, location:[E,12]
+    [-39,<]->damage:100, move:10, location:[A,21]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,27] -> [E,28]
+    A friendly projectile(id:-28) moves: [E,25] -> [E,26]
+    A friendly projectile(id:-31) moves: [E,11] -> [E,12]
+  Enemy Projectile Action:
+    A enemy projectile(id:-38) moves: [D,1] -> out of board
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [E,1], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:8) moves: [A,28] -> [A,22]
+      A enemy projectile(id:-39) spawns at location [A,21].
+    A Pylon(id:5) moves: [D,2] -> [D,1]
+      A enemy projectile(id:-40) spawns at location out of board.
+    A Pylon(id:7) moves: [D,24] -> [D,22]
+      The Pylon heals Pylon(id:7) at location [D,22] for 10 damage.
+      The Pylon heals Fighter(id:8) at location [A,22] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  <  F  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D P  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  *
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->move(G,7)
+  state:in game(67.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:64/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[G,7]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [7,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,20]
+    [8,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,19]
+  Projectile:
+    [-28,*]->damage:50, move:1, location:[E,27]
+    [-31,*]->damage:50, move:1, location:[E,13]
+    [-39,<]->damage:100, move:10, location:[A,11]
+    [-41,<]->damage:20, move:3, location:[A,18]
+  Friendly Projectile Action:
+    A friendly projectile(id:-25) moves: [E,28] -> out of board
+    A friendly projectile(id:-28) moves: [E,26] -> [E,27]
+    A friendly projectile(id:-31) moves: [E,12] -> [E,13]
+  Enemy Projectile Action:
+    A enemy projectile(id:-39) moves: [A,21] -> [A,11]
+  Starfighter Action:
+    The Starfighter(id:0) moves: [E,1] -> [G,7]
+  Enemy Action:
+    A Pylon(id:5) moves: [D,1] -> out of board
+    A Pylon(id:7) moves: [D,22] -> [D,20]
+      The Pylon heals Pylon(id:7) at location [D,20] for 10 damage.
+      The Pylon heals Fighter(id:8) at location [A,22] for 10 damage.
+    A Fighter(id:8) moves: [A,22] -> [A,19]
+      A enemy projectile(id:-41) spawns at location [A,18].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  _  _  _  _  _  _  _  _  _  <  _  _  _  _  _  _  <  F  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _
+    E _  _  _  _  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  S  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->pass
+  state:in game(68.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:72/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[G,7]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [7,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,18]
+    [8,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:T, can_see_Starfighter:F, location:[A,13]
+  Projectile:
+    [-28,*]->damage:50, move:1, location:[E,28]
+    [-31,*]->damage:50, move:1, location:[E,14]
+    [-39,<]->damage:100, move:10, location:[A,1]
+    [-42,<]->damage:100, move:10, location:[A,12]
+  Friendly Projectile Action:
+    A friendly projectile(id:-28) moves: [E,27] -> [E,28]
+    A friendly projectile(id:-31) moves: [E,13] -> [E,14]
+  Enemy Projectile Action:
+    A enemy projectile(id:-39) moves: [A,11] -> [A,1]
+    A enemy projectile(id:-41) moves: [A,18] -> [A,15]
+  Starfighter Action:
+    The Starfighter(id:0) passes at location [G,7], doubling regen rate.
+  Enemy Action:
+    A Fighter(id:8) moves: [A,19] -> [A,13]
+      The Fighter collides with enemy projectile(id:-41) at location [A,15], healing 20 damage.
+      A enemy projectile(id:-42) spawns at location [A,12].
+    A Pylon(id:7) moves: [D,20] -> [D,18]
+      The Pylon heals Pylon(id:7) at location [D,18] for 10 damage.
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A <  _  _  _  _  _  _  _  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _
+    E _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _  *
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  S  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->special
+  state:in game(69.0), debug, ok
+  Starfighter:
+    [0,S]->health:110/110, energy:26/120, Regen:3/4, Armour:7, Vision:12, Move:8, Move Cost:7, location:[E,1]
+      Projectile Pattern:Spread, Projectile Damage:50, Projectile Cost:10 (energy)
+      Power:Recall (50 energy): Teleport back to spawn.
+      score:2
+  Enemy:
+    [7,P]->health:300/300, Regen:0, Armour:0, Vision:5, seen_by_Starfighter:F, can_see_Starfighter:F, location:[D,16]
+    [8,F]->health:150/150, Regen:5, Armour:10, Vision:10, seen_by_Starfighter:F, can_see_Starfighter:F, location:[A,10]
+  Projectile:
+    [-31,*]->damage:50, move:1, location:[E,15]
+    [-42,<]->damage:100, move:10, location:[A,2]
+    [-43,<]->damage:20, move:3, location:[A,9]
+  Friendly Projectile Action:
+    A friendly projectile(id:-28) moves: [E,28] -> out of board
+    A friendly projectile(id:-31) moves: [E,14] -> [E,15]
+  Enemy Projectile Action:
+    A enemy projectile(id:-39) moves: [A,1] -> out of board
+    A enemy projectile(id:-42) moves: [A,12] -> [A,2]
+  Starfighter Action:
+    The Starfighter(id:0) uses special, teleporting to: [E,1]
+  Enemy Action:
+    A Pylon(id:7) moves: [D,18] -> [D,16]
+      The Pylon heals Pylon(id:7) at location [D,16] for 10 damage.
+    A Fighter(id:8) moves: [A,13] -> [A,10]
+      A enemy projectile(id:-43) spawns at location [A,9].
+  Natural Enemy Spawn:
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+    A _  <  _  _  _  _  _  _  <  F  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  P  _  _  _  _  _  _  _  _  _  _  _  _
+    E S  _  _  _  _  _  _  _  _  _  _  _  _  _  *  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    I _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+->abort
+  state:not started, debug, ok
+  Exited from game.
+->play(8,15,14,28,46,58,61)
+  state:weapon setup, debug, ok
+  1:Standard (A single projectile is fired in front)
+    Health:10, Energy:10, Regen:0/1, Armour:0, Vision:1, Move:1, Move Cost:1,
+    Projectile Damage:70, Projectile Cost:5 (energy)
+  2:Spread (Three projectiles are fired in front, two going diagonal)
+    Health:0, Energy:60, Regen:0/2, Armour:1, Vision:0, Move:0, Move Cost:2,
+    Projectile Damage:50, Projectile Cost:10 (energy)
+  3:Snipe (Fast and high damage projectile, but only travels via teleporting)
+    Health:0, Energy:100, Regen:0/5, Armour:0, Vision:10, Move:3, Move Cost:0,
+    Projectile Damage:1000, Projectile Cost:20 (energy)
+  4:Rocket (Two projectiles appear behind to the sides of the Starfighter and accelerates)
+    Health:10, Energy:0, Regen:10/0, Armour:2, Vision:2, Move:0, Move Cost:3,
+    Projectile Damage:100, Projectile Cost:10 (health)
+  5:Splitter (A single mine projectile is placed in front of the Starfighter)
+    Health:0, Energy:100, Regen:0/10, Armour:0, Vision:0, Move:0, Move Cost:5,
+    Projectile Damage:150, Projectile Cost:70 (energy)
+  Weapon Selected:Spread
+->toggle_debug_mode
+  state:weapon setup, normal, ok
+  Not in debug mode.
+->setup_select(4)
+  state:weapon setup, normal, ok
+  1:Standard (A single projectile is fired in front)
+    Health:10, Energy:10, Regen:0/1, Armour:0, Vision:1, Move:1, Move Cost:1,
+    Projectile Damage:70, Projectile Cost:5 (energy)
+  2:Spread (Three projectiles are fired in front, two going diagonal)
+    Health:0, Energy:60, Regen:0/2, Armour:1, Vision:0, Move:0, Move Cost:2,
+    Projectile Damage:50, Projectile Cost:10 (energy)
+  3:Snipe (Fast and high damage projectile, but only travels via teleporting)
+    Health:0, Energy:100, Regen:0/5, Armour:0, Vision:10, Move:3, Move Cost:0,
+    Projectile Damage:1000, Projectile Cost:20 (energy)
+  4:Rocket (Two projectiles appear behind to the sides of the Starfighter and accelerates)
+    Health:10, Energy:0, Regen:10/0, Armour:2, Vision:2, Move:0, Move Cost:3,
+    Projectile Damage:100, Projectile Cost:10 (health)
+  5:Splitter (A single mine projectile is placed in front of the Starfighter)
+    Health:0, Energy:100, Regen:0/10, Armour:0, Vision:0, Move:0, Move Cost:5,
+    Projectile Damage:150, Projectile Cost:70 (energy)
+  Weapon Selected:Rocket
+->setup_next(1)
+  state:armour setup, normal, ok
+  1:None
+    Health:50, Energy:0, Regen:1/0, Armour:0, Vision:0, Move:1, Move Cost:0
+  2:Light
+    Health:75, Energy:0, Regen:2/0, Armour:3, Vision:0, Move:0, Move Cost:1
+  3:Medium
+    Health:100, Energy:0, Regen:3/0, Armour:5, Vision:0, Move:0, Move Cost:3
+  4:Heavy
+    Health:200, Energy:0, Regen:4/0, Armour:10, Vision:0, Move:-1, Move Cost:5
+  Armour Selected:Medium
+->setup_select(2)
+  state:armour setup, normal, ok
+  1:None
+    Health:50, Energy:0, Regen:1/0, Armour:0, Vision:0, Move:1, Move Cost:0
+  2:Light
+    Health:75, Energy:0, Regen:2/0, Armour:3, Vision:0, Move:0, Move Cost:1
+  3:Medium
+    Health:100, Energy:0, Regen:3/0, Armour:5, Vision:0, Move:0, Move Cost:3
+  4:Heavy
+    Health:200, Energy:0, Regen:4/0, Armour:10, Vision:0, Move:-1, Move Cost:5
+  Armour Selected:Light
+->setup_next(1)
+  state:engine setup, normal, ok
+  1:Standard
+    Health:10, Energy:60, Regen:0/2, Armour:1, Vision:12, Move:8, Move Cost:2
+  2:Light
+    Health:0, Energy:30, Regen:0/1, Armour:0, Vision:15, Move:10, Move Cost:1
+  3:Armoured
+    Health:50, Energy:100, Regen:0/3, Armour:3, Vision:6, Move:4, Move Cost:5
+  Engine Selected:Standard
+->setup_select(2)
+  state:engine setup, normal, ok
+  1:Standard
+    Health:10, Energy:60, Regen:0/2, Armour:1, Vision:12, Move:8, Move Cost:2
+  2:Light
+    Health:0, Energy:30, Regen:0/1, Armour:0, Vision:15, Move:10, Move Cost:1
+  3:Armoured
+    Health:50, Energy:100, Regen:0/3, Armour:3, Vision:6, Move:4, Move Cost:5
+  Engine Selected:Light
+->setup_next(1)
+  state:power setup, normal, ok
+  1:Recall (50 energy): Teleport back to spawn.
+  2:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+  3:Overcharge (up to 50 health): Gain 2*health spent energy, can go over max energy. Energy regen will not be in effect if over cap.
+  4:Deploy Drones (100 energy): Clear all projectiles.
+  5:Orbital Strike (100 energy): Deal 100 damage to all enemies, affected by armour.
+  Power Selected:Recall (50 energy): Teleport back to spawn.
+->setup_select(2)
+  state:power setup, normal, ok
+  1:Recall (50 energy): Teleport back to spawn.
+  2:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+  3:Overcharge (up to 50 health): Gain 2*health spent energy, can go over max energy. Energy regen will not be in effect if over cap.
+  4:Deploy Drones (100 energy): Clear all projectiles.
+  5:Orbital Strike (100 energy): Deal 100 damage to all enemies, affected by armour.
+  Power Selected:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+->setup_next(1)
+  state:setup summary, normal, ok
+  Weapon Selected:Rocket
+  Armour Selected:Light
+  Engine Selected:Light
+  Power Selected:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+->setup_select(2)
+  state:setup summary, normal, error
+  Command can only be used in setup mode (excluding summary in setup).
+->setup_next(1)
+  state:in game(0.0), normal, ok
+  Starfighter:
+    [0,S]->health:85/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D S  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->pass
+  state:in game(1.0), normal, ok
+  Starfighter:
+    [0,S]->health:85/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D S  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    E _  _  _  _  _  _  _  _  _  _  _  _  _  _  C
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->pass
+  state:in game(2.0), normal, ok
+  Starfighter:
+    [0,S]->health:85/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D S  _  _  _  _  _  _  _  _  _  _  _  I  _  C
+    E _  _  _  _  _  _  _  _  _  _  _  _  C  _  _
+    F _  _  _  _  _  _  _  _  _  _  _  _  I  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->fire
+  state:in game(3.0), normal, ok
+  Starfighter:
+    [0,S]->health:75/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D S  _  _  _  _  _  _  _  _  _  _  _  I  C  _
+    E _  _  _  _  _  _  _  _  _  _  I  C  _  _  I
+    F _  _  _  _  _  _  _  _  _  _  _  _  I  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->fire
+  state:in game(4.0), normal, ok
+  Starfighter:
+    [0,S]->health:75/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    D S  _  _  _  _  _  _  _  _  _  I  _  I  C  I
+    E _  _  _  _  _  _  _  _  _  I  C  _  I  _  I
+    F _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->pass
+  state:in game(5.0), normal, ok
+  Starfighter:
+    [0,S]->health:85/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  _  I  _
+    D S  _  _  _  _  _  _  I  _  _  _  I  _  C  I
+    E _  _  _  _  _  _  I  _  _  _  C  I  _  I  I
+    F _  _  _  _  _  _  _  _  _  _  I  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->pass
+  state:in game(6.0), normal, ok
+  Starfighter:
+    [0,S]->health:85/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  _  _  I  I  _
+    D S  _  _  _  I  _  _  _  I  I  _  _  C  I  _
+    E _  _  _  I  _  _  _  _  C  I  _  _  I  I  I
+    F _  _  _  _  _  _  _  _  I  I  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  <  F  _  _  _  _  _  ?
+->pass
+  state:in game(7.0), normal, ok
+  Starfighter:
+    [0,S]->health:85/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:0
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  _  _  _  I  I  _  I  _
+    D S  I  _  _  _  _  I  I  _  I  C  I  _  _  _
+    E I  _  _  _  _  _  C  I  _  _  I  I  _  I  I
+    F _  _  _  _  _  _  I  I  _  I  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  <  F  _  _  _  _  _  _  _  _  _  _  _  ?
+->pass
+  state:in game(8.0), normal, ok
+  Starfighter:
+    [0,S]->health:35/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:1
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  _  _  _  I  _  _  _  I  I  _  _
+    D S  _  _  _  I  I  _  I  I  _  C  I  _  _  _
+    E _  _  _  _  C  I  _  I  _  _  _  I  I  _  I
+    F _  _  _  _  I  I  _  I  I  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->pass
+  state:in game(9.0), normal, ok
+  Starfighter:
+    [0,S]->health:59/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:1
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  _  _  _  I  _  _  _  _  I  I  _  I  _  _
+    D S  _  I  I  _  I  I  _  I  C  I  _  _  _  _
+    E _  _  C  I  I  _  _  _  _  I  I  _  I  I  _
+    F _  _  I  I  _  I  I  _  I  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+->pass
+  state:not started, normal, ok
+  Starfighter:
+    [0,S]->health:0/85, energy:30/30, Regen:12/1, Armour:5, Vision:17, Move:10, Move Cost:5, location:[D,1]
+      Projectile Pattern:Rocket, Projectile Damage:100, Projectile Cost:10 (health)
+      Power:Repair (50 energy): Gain 50 health, can go over max health. Health regen will not be in effect if over cap.
+      score:3
+      1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+    A _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    B _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    C _  I  _  _  _  _  _  _  _  I  I  I  _  _  _
+    D X  _  _  I  I  _  I  I  _  C  I  _  _  _  _
+    E C  I  I  _  _  _  _  _  _  I  I  I  _  I  _
+    F I  _  I  I  I  _  I  I  _  _  _  _  _  _  _
+    G _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+    H _  _  _  _  _  _  _  _  _  _  _  _  _  _  ?
+  The game is over. Better luck next time!
+->fire
+  state:not started, normal, error
+  Command can only be used in game.
+->special
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->fire
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->move(A,11)
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->fire
+  state:not started, normal, error
+  Command can only be used in game.
+->move(D,29)
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
+->fire
+  state:not started, normal, error
+  Command can only be used in game.
+->pass
+  state:not started, normal, error
+  Command can only be used in game.
